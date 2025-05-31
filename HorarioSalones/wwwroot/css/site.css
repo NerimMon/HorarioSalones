@@ -20,3 +20,25 @@ html {
 body {
   margin-bottom: 60px;
 }
+/*#mapa-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;*/ /* Ajusta según el tamaño del mapa */
+/*}
+
+#botoncito-ingenieria {
+    position: absolute;
+    left: 73%;
+    top: 55%;
+}*/
+.botoncito {
+    width: 4%;
+    top: 55%;
+    left: 73%;
+    transform: scale(.8);
+}
+
+    .botoncito:hover {
+        transform: scale(1);
+        cursor: pointer;
+    }
