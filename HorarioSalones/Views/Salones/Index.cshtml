@@ -1,10 +1,15 @@
 ﻿@{
     ViewData["Title"] = "Salones";
 }
-<h1><center>¡Horarios de salones!</center></h1>
+<h1 class="text-center">
+    <a asp-controller="Salones" asp-action="Administrador">
+        ¡Horarios de salones!
+    </a>
+</h1>
+
 <div class="position-relative d-flex justify-content-center">
     <img src="~/imagenes/chupiicsa.jpg" alt="mapa UPIICSA" class="img-fluid" />
-    <a href="https://www.sites.upiicsa.ipn.mx/uteycv/mapa_interactivo/" class="position-absolute botoncito">
+    <a asp-controller="Salones" asp-action="Planta" class="position-absolute botoncito">
         <img src="~/imagenes/botoncito.png" alt="boton edificio ingenieria" class="img-fluid" />
     </a>
 </div>

@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  background-color: #f1f1f1;
 }
 
 @media (min-width: 768px) {
@@ -20,17 +21,10 @@ html {
 body {
   margin-bottom: 60px;
 }
-/*#mapa-container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;*/ /* Ajusta según el tamaño del mapa */
-/*}
 
-#botoncito-ingenieria {
-    position: absolute;
-    left: 73%;
-    top: 55%;
-}*/
+nav{
+    background-color: #5a1236;
+}
 .botoncito {
     width: 4%;
     top: 55%;
@@ -41,4 +35,33 @@ body {
     .botoncito:hover {
         transform: scale(1);
         cursor: pointer;
+    }
+
+/****************************************************************************/
+
+:root {
+    --button-size: 100px; /* tamaño por defecto */
+}
+
+.square-button {
+    width: var(--button-size);
+    height: var(--button-size);
+    font-size: calc(var(--button-size) / 5);
+    border-radius: 0.5rem;
+}
+
+/****************************************************/
+.boton-superior-derecho {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Lado derecho */
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10; /* Por si se superpone algo */
+}
+
+    .boton-superior-derecho:hover {
+        transform: scale(1.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }

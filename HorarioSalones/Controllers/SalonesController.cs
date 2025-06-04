@@ -8,5 +8,9 @@ namespace HorarioSalones.Controllers
         {
             return View();
         }
+        public IActionResult Planta()
+        {
+            return View();
+        }
     }
 }
